@@ -71,6 +71,11 @@
         </div>
       </a>
 
+      <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold text-slate-600">
+        <a href="#" onclick="resetCatalog(); return false;" class="hover:text-brand-600 transition">Home</a>
+        <a href="#catalog" class="hover:text-brand-600 transition">Product</a>
+      </nav>
+
       <!-- Quick Search Bar (Header) -->
       <div class="flex-1 max-w-xl mx-4 hidden md:block">
         <div class="relative">
@@ -149,7 +154,7 @@
   </section>
 
   <!-- Main Catalog Container -->
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-1 w-full">
+  <main id="catalog" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-1 w-full">
     
     <!-- Controls Toolbar (Filters, Sort, Reset) -->
     <div class="bg-white p-4 sm:p-5 rounded-2xl border border-slate-200/80 shadow-sm mb-8">
